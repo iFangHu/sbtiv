@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SBTI 人格测试</title>
+  <title>SBTI Bài kiểm tra tính cách</title>
   <style>
     :root {
       --bg: #f6faf6;
@@ -687,20 +687,16 @@
   <div class="shell">
     <section id="intro" class="screen active">
       <div class="hero card hero-minimal">
-        <h1>MBTI已经过时，SBTI来了。</h1>
+        <h1>MBTI đã lỗi thời, SBTI đến rồi.</h1>
         <div class="hero-actions hero-actions-single">
-          <button id="startBtn" class="btn-primary">开始测试</button>
+          <button id="startBtn" class="btn-primary">Bắt đầu kiểm tra</button>
         </div>
         <div style="padding-top: 2rem; display: flex; flex-direction: column;">
           <span>
-            原作者：
-            <a href="https://space.bilibili.com/417038183">B站@蛆肉儿串儿</a>
           </span>
           <span>
-            托管：Cloudflare (免费)
           </span>
           <span>
-            域名：Spaceship (自费)
           </span>
         </div>
       </div>
@@ -716,10 +712,10 @@
         <div id="questionList" class="question-list"></div>
 
         <div class="actions-bottom">
-          <div class="hint" id="testHint">全选完才会放行。世界已经够乱了，起码把题做完整。</div>
+          <div class="hint" id="testHint">Chỉ khi chọn hết tất cả mới cho qua. Thế giới đã đủ rối loạn rồi, ít nhất cũng làm xong bài.</div>
           <div style="display:flex; gap:12px; flex-wrap:wrap;">
-            <button id="backIntroBtn" class="btn-secondary">返回首页</button>
-            <button id="submitBtn" class="btn-primary" disabled>提交并查看结果</button>
+            <button id="backIntroBtn" class="btn-secondary">Trở về trang chủ</button>
+            <button id="submitBtn" class="btn-primary" disabled>Nộp và xem kết quả</button>
           </div>
         </div>
       </div>
@@ -732,47 +728,47 @@
           <div class="result-top">
             <div class="poster-box" id="posterBox">
               <img id="posterImage" class="poster-image" alt="人格结果图" />
-              <div id="posterCaption" class="poster-caption">怎么样，被我拿捏了吧？</div>
+              <div id="posterCaption" class="poster-caption">Bị tao nắm thóp rồi chứ?</div>
             </div>
 
             <div class="type-box">
-              <div class="type-kicker" id="resultModeKicker">你的主类型</div>
-              <div class="type-name" id="resultTypeName">CTRL（拿捏者）</div>
-              <div class="match" id="matchBadge">匹配度 92%</div>
-              <div class="type-subname" id="resultTypeSub">系统备注会显示在这里。</div>
+              <div class="type-kicker" id="resultModeKicker">Loại chính của bạn</div>
+              <div class="type-name" id="resultTypeName">CTRL</div>
+              <div class="match" id="matchBadge">Mức độ khớp 92%</div>
+              <div class="type-subname" id="resultTypeSub">Hệ thống ghi chú sẽ hiển thị ở đây.</div>
             </div>
           </div>
 
           <div class="analysis-box">
-            <h3>该人格的简单解读</h3>
+            <h3>Giải thích đơn giản về nhân cách này</h3>
             <p id="resultDesc"></p>
           </div>
 
           <div class="dim-box">
-            <h3>十五维度评分</h3>
+            <h3>Điểm 15 chiều</h3>
             <div id="dimList" class="dim-list"></div>
           </div>
 
           <div class="note-box">
-            <h3>友情提示</h3>
-            <p id="funNote">本测试仅供娱乐，别拿它当诊断、面试、相亲、分手、招魂、算命或人生判决书。</p>
-          </div>
+            <h3>Lời nhắc nhở</h3>
+            <p id="funNote">Bài kiểm tra này chỉ để giải trí, đừng dùng làm chẩn đoán, phỏng vấn, mai mối, chia tay, gọi hồn, bói toán hay phán quyết cuộc đời.</p>
+                    </div>
 
                     <details class="author-box">
-            <summary>作者的话</summary>
-            <div class="author-content">
-              <p>本测试首发于b站up主蛆肉儿串儿（UID417038183），初衷是劝诫一位爱喝酒的朋友戒酒。</p>
-              <p>由于作者的人格是SHIT愤世者，所以平等的攻击了各位，在此抱歉！！不过我是一个绝世大美女，你们一定会原谅我，有B站的朋友们也可以关注我。</p>
-              <p>关于这个测试，我没法很好的平衡娱乐和专业性，因此对于一些人格的阐释较为模糊或完全不准（如屌丝可能并非真的屌丝），如有冒犯非常抱歉！！</p>
-              <p>再鉴于时间精力有限，就随便搞了一个先这样玩玩，后续会慢慢完善修改的，总之好玩为主，还请不要用于盈利呀。</p>
-            </div>
+                      <summary>Lời tác giả</summary>
+                      <div class="author-content">
+                        <p>Mục đích ban đầu của bài kiểm tra này là khuyên một người bạn nghiện rượu cai rượu.</p>
+                        <p>Vì nhân cách của tác giả là SHIT - kẻ thù đời, nên đã bình đẳng tấn công mọi người, xin lỗi vì điều đó!!</p>
+                        <p>Về bài kiểm tra này, tôi không thể cân bằng tốt giữa giải trí và tính chuyên nghiệp, nên một số phần giải thích nhân cách khá mơ hồ hoặc hoàn toàn không chính xác (ví dụ:Kẻ thua cuộc có thể không phải thật sự làKẻ thua cuộc), nếu có xúc phạm xin lỗi rất nhiều!!</p>
+                        <p>Ngoài ra do thời gian và Năng lượng hạn chế, nên chỉ làm tạm để chơi trước, sau này sẽ từ từ hoàn thiện và sửa chữa. Tóm lại là vui là chính, mong mọi người đừng dùng để kiếm tiền nhé.</p>
+                                  </div>
           </details>
         </div>
 
         <div class="result-actions">
           <div style="display:flex; gap:12px; flex-wrap:wrap;">
-            <button id="restartBtn" class="btn-secondary">重新测试</button>
-            <button id="toTopBtn" class="btn-primary">回到首页</button>
+            <button id="restartBtn" class="btn-secondary">Làm lại bài kiểm tra</button>
+            <button id="toTopBtn" class="btn-primary">Về trang chủ</button>
           </div>
         </div>
       </div>
@@ -783,291 +779,291 @@
   
   <script>
     const dimensionMeta = {
-      S1: { name: 'S1 自尊自信', model: '自我模型' },
-      S2: { name: 'S2 自我清晰度', model: '自我模型' },
-      S3: { name: 'S3 核心价值', model: '自我模型' },
-      E1: { name: 'E1 依恋安全感', model: '情感模型' },
-      E2: { name: 'E2 情感投入度', model: '情感模型' },
-      E3: { name: 'E3 边界与依赖', model: '情感模型' },
-      A1: { name: 'A1 世界观倾向', model: '态度模型' },
-      A2: { name: 'A2 规则与灵活度', model: '态度模型' },
-      A3: { name: 'A3 人生意义感', model: '态度模型' },
-      Ac1: { name: 'Ac1 动机导向', model: '行动驱力模型' },
-      Ac2: { name: 'Ac2 决策风格', model: '行动驱力模型' },
-      Ac3: { name: 'Ac3 执行模式', model: '行动驱力模型' },
-      So1: { name: 'So1 社交主动性', model: '社交模型' },
-      So2: { name: 'So2 人际边界感', model: '社交模型' },
-      So3: { name: 'So3 表达与真实度', model: '社交模型' }
-    };
+      S1: { name: 'S1 Tự trọng & Tự tin', model: 'Mô hình bản thân' },
+      S2: { name: 'S2 Độ rõ ràng bản thân', model: 'Mô hình bản thân' },
+      S3: { name: 'S3 Giá trị cốt lõi', model: 'Mô hình bản thân' },
+      E1: { name: 'E1 Cảm giác an toàn gắn bó', model: 'Mô hình cảm xúc' },
+      E2: { name: 'E2 Mức độ đầu tư cảm xúc', model: 'Mô hình cảm xúc' },
+      E3: { name: 'E3 Ranh giới & Phụ thuộc', model: 'Mô hình cảm xúc' },
+      A1: { name: 'A1 Xu hướng thế giới quan', model: 'Mô hình thái độ' },
+      A2: { name: 'A2 Quy tắc & Linh hoạt', model: 'Mô hình thái độ' },
+      A3: { name: 'A3 Cảm giác ý nghĩa cuộc đời', model: 'Mô hình thái độ' },
+      Ac1: { name: 'Ac1 Hướng động lực', model: 'Mô hình động lực hành động' },
+      Ac2: { name: 'Ac2 Phong cách quyết định', model: 'Mô hình động lực hành động' },
+      Ac3: { name: 'Ac3 Chế độ thực thi', model: 'Mô hình động lực hành động' },
+      So1: { name: 'So1 Tính chủ động xã giao', model: 'Mô hình xã giao' },
+      So2: { name: 'So2 Cảm giác ranh giới giao tiếp', model: 'Mô hình xã giao' },
+      So3: { name: 'So3 Biểu đạt & Độ chân thực', model: 'Mô hình xã giao' }
+        };
     const questions = [
       {
         id: 'q1', dim: 'S1',
-        text: '我不仅是屌丝，我还是joker,我还是咸鱼，这辈子没谈过一场恋爱，胆怯又自卑，我的青春就是一场又一场的意淫，每一天幻想着我也能有一个女孩子和我一起压马路，一起逛街，一起玩，现实却是爆了父母金币，读了个烂学校，混日子之后找班上，没有理想，没有目标，没有能力的三无人员，每次看到你能在网上开屌丝的玩笑，我都想哭，我就是地底下的老鼠，透过下水井的缝隙，窥探地上的各种美好，每一次看到这种都是对我心灵的一次伤害，对我生存空间的一次压缩，求求哥们给我们这种小丑一点活路吧，我真的不想在白天把枕巾哭湿一大片',
+        text: 'Tôi không chỉ là loser, tôi còn là Joker, tôi còn là cá mè một lứa. Cả đời chưa từng yêu ai, nhút nhát và tự ti. Thanh xuân của tôi chỉ là những lần tưởng tượng dâm đãng. Mỗi ngày mơ có một cô gái cùng tôi dạo phố, đi chơi. Thực tế lại là tiêu hết tiền bố mẹ, học trường dở, sau đó đi làm việc vặt, không lý tưởng, không mục tiêu, không năng lực — một kẻ ba không. Mỗi lần thấy anh đùa về loser trên mạng, tôi đều muốn khóc. Tôi là con chuột dưới cống, qua khe cống ngắm nhìn những điều đẹp đẽ trên mặt đất. Mỗi lần thấy vậy đều là một lần tổn thương tâm hồn, một lần bị ép hẹp không gian sống. Xin anh em cho bọn hề chúng tôi một con đường sống đi. Tôi thật sự không muốn ban ngày khóc ướt cả gối.',
         options: [
-          { label: '我哭了。。', value: 1 },
-          { label: '这是什么。。', value: 2 },
-          { label: '这不是我！', value: 3 }
-        ]
+          { label: 'Tôi khóc rồi...', value: 1 },
+          { label: 'Đây là cái gì...', value: 2 },
+          { label: 'Đây không phải tôi!', value: 3 }
+                ]
       },
       {
         id: 'q2', dim: 'S1',
-        text: '我不够好，周围的人都比我优秀',
+        text: 'Tôi không đủ tốt, mọi người xung quanh đều giỏi hơn tôi',
         options: [
-          { label: '确实', value: 1 },
-          { label: '有时', value: 2 },
-          { label: '不是', value: 3 }
+          { label: 'Đúng vậy', value: 1 },
+          { label: 'Thỉnh thoảng', value: 2 },
+          { label: 'Không phải', value: 3 }
         ]
       },
       {
         id: 'q3', dim: 'S2',
-        text: '我很清楚真正的自己是什么样的',
+        text: 'Tôi rất rõ bản thân thật sự là như thế nào',
         options: [
-          { label: '不认同', value: 1 },
-          { label: '中立', value: 2 },
-          { label: '认同', value: 3 }
+          { label: 'Không đồng ý', value: 1 },
+          { label: 'Trung lập', value: 2 },
+          { label: 'Đồng ý', value: 3 }
         ]
       },
       {
         id: 'q4', dim: 'S2',
-        text: '我内心有真正追求的东西',
+        text: 'Tôi có những thứ thực sự theo đuổi trong lòng',
         options: [
-          { label: '不认同', value: 1 },
-          { label: '中立', value: 2 },
-          { label: '认同', value: 3 }
+          { label: 'Không đồng ý', value: 1 },
+          { label: 'Trung lập', value: 2 },
+          { label: 'Đồng ý', value: 3 }
         ]
       },
       {
         id: 'q5', dim: 'S3',
-        text: '我一定要不断往上爬、变得更厉害',
+        text: 'Tôi nhất định phải liên tục leo cao, trở nên giỏi hơn',
         options: [
-          { label: '不认同', value: 1 },
-          { label: '中立', value: 2 },
-          { label: '认同', value: 3 }
+          { label: 'Không đồng ý', value: 1 },
+          { label: 'Trung lập', value: 2 },
+          { label: 'Đồng ý', value: 3 }
         ]
       },
       {
         id: 'q6', dim: 'S3',
-        text: '外人的评价对我来说无所吊谓。',
+        text: 'Đánh giá của người ngoài đối với tôi chẳng quan trọng gì.',
         options: [
-          { label: '不认同', value: 1 },
-          { label: '中立', value: 2 },
-          { label: '认同', value: 3 }
+          { label: 'Không đồng ý', value: 1 },
+          { label: 'Trung lập', value: 2 },
+          { label: 'Đồng ý', value: 3 }
         ]
       },
       {
         id: 'q7', dim: 'E1',
-        text: '对象超过5小时没回消息，说自己窜稀了，你会怎么想？',
+        text: 'Đối tượng hơn 5 tiếng không trả tin, nói bị tiêu chảy, bạn sẽ nghĩ gì?',
         options: [
-          { label: '拉稀不可能5小时，也许ta隐瞒了我。', value: 1 },
-          { label: '在信任和怀疑之间摇摆。', value: 2 },
-          { label: '也许今天ta真的不太舒服。', value: 3 }
+          { label: 'Tiêu chảy không thể 5 tiếng, có lẽ ta đang giấu tôi.', value: 1 },
+          { label: 'Dao động giữa tin tưởng và nghi ngờ.', value: 2 },
+          { label: 'Có lẽ hôm nay ta thật sự không thoải mái.', value: 3 }
         ]
       },
       {
         id: 'q8', dim: 'E1',
-        text: '我在感情里经常担心被对方抛弃',
+        text: 'Trong tình cảm tôi thường lo bị đối phương bỏ rơi',
         options: [
-          { label: '是的', value: 1 },
-          { label: '偶尔', value: 2 },
-          { label: '不是', value: 3 }
+          { label: 'Có', value: 1 },
+          { label: 'Thỉnh thoảng', value: 2 },
+          { label: 'Không', value: 3 }
         ]
       },
       {
         id: 'q9', dim: 'E2',
-        text: '我对天发誓，我对待每一份感情都是认真的！',
+        text: 'Tôi thề với trời, tôi đối xử với mỗi mối tình đều rất nghiêm túc!',
         options: [
-          { label: '并没有', value: 1 },
-          { label: '也许？', value: 2 },
-          { label: '是的！（问心无愧骄傲脸）', value: 3 }
+          { label: 'Không có', value: 1 },
+          { label: 'Có lẽ?', value: 2 },
+          { label: 'Có chứ! (Mặt kiêu hãnh không hối hận)', value: 3 }
         ]
       },
       {
         id: 'q10', dim: 'E2',
-        text: '你的恋爱对象是一个尊老爱幼，温柔敦厚，洁身自好，光明磊落，大义凛然，能言善辩，口才流利，观察入微，见多识广，博学多才，诲人不倦，和蔼可亲，平易近人，心地善良，慈眉善目，积极进取，意气风发，玉树临风，国色天香，倾国倾城，花容月貌的人，此时你会？',
+        text: 'Đối tượng yêu của bạn là người tôn kính người già, yêu thương trẻ em, dịu dàng hiền hậu, giữ gìn phẩm hạnh, Quang minh chính đại, Chính nghĩa lẫm liệt, ăn nói giỏi giang, khẩu tài lưu loát, quan sát tinh tế, kiến thức rộng lớn, học rộng tài cao, dạy người không mệt mỏi, hòa nhã dễ gần, thân thiện bình dị, lòng dạ thiện lương, từ bi hiền từ, tích cực tiến thủ, ý khí phong phát, ngọc thụ lâm phong, quốc sắc thiên hương, nghiêng nước nghiêng thành, hoa dung nguyệt mạo. Lúc này bạn sẽ？',
         options: [
-          { label: '就算ta再优秀我也不会陷入太深。', value: 1 },
-          { label: '会介于A和C之间。', value: 2 },
-          { label: '会非常珍惜ta，也许会变成恋爱脑。', value: 3 }
+          { label: 'Dù ta giỏi đến đâu tôi cũng không sa đà quá sâu.', value: 1 },
+          { label: 'Sẽ ở giữa A và C.', value: 2 },
+          { label: 'Sẽ rất trân trọng ta, có lẽ sẽ trở thành não tình yêu.', value: 3 }
         ]
       },
       {
         id: 'q11', dim: 'E3',
-        text: '恋爱后，对象非常黏人，你作何感想？',
+        text: 'Sau khi yêu, đối tượng rất dính người, bạn cảm thấy sao?',
         options: [
-          { label: '那很爽了', value: 1 },
-          { label: '都行无所谓', value: 2 },
-          { label: '我更喜欢保留独立空间', value: 3 }
+          { label: 'Thì sướng rồi', value: 1 },
+          { label: 'Gì cũng được', value: 2 },
+          { label: 'Tôi thích giữ không gian độc lập hơn', value: 3 }
         ]
       },
       {
         id: 'q12', dim: 'E3',
-        text: '我在任何关系里都很重视个人空间',
+        text: 'Trong bất kỳ mối quan hệ nào tôi cũng rất coi trọng không gian cá nhân',
         options: [
-          { label: '我更喜欢依赖与被依赖', value: 1 },
-          { label: '看情况', value: 2 },
-          { label: '是的！（斩钉截铁地说道）', value: 3 }
+          { label: 'Tôi thích phụ thuộc và được phụ thuộc', value: 1 },
+          { label: 'Tùy tình huống', value: 2 },
+          { label: 'Đúng vậy! (Nói dứt khoát)', value: 3 }
         ]
       },
       {
         id: 'q13', dim: 'A1',
-        text: '大多数人是善良的',
+        text: 'Hầu hết mọi người đều tốt bụng',
         options: [
-          { label: '其实邪恶的人心比世界上的痔疮更多。', value: 1 },
-          { label: '也许吧。', value: 2 },
-          { label: '是的，我愿相信好人更多。', value: 3 }
+          { label: 'Thực ra người ác trong lòng nhiều hơn trĩ trên đời.', value: 1 },
+          { label: 'Có lẽ vậy.', value: 2 },
+          { label: 'Đúng, tôi muốn tin người tốt nhiều hơn.', value: 3 }
         ]
       },
       {
         id: 'q14', dim: 'A1',
-        text: '你走在街上，一位萌萌的小女孩蹦蹦跳跳地朝你走来（正脸、侧脸看都萌，用vivo、苹果、华为、OPPO手机看都萌，实在是非常萌的那种），她递给你一根棒棒糖，此时你作何感想？',
+        text: 'Bạn đi trên phố, một cô bé dễ thương nhảy nhót chạy đến (nhìn chính diện hay nghiêng đều dễ thương, dùng vivo, apple, huawei, oppo xem cũng dễ thương, thật sự rất dễ thương), cô bé đưa cho bạn một que kẹo mút, lúc này bạn nghĩ gì?',
         options: [
-          { label: '呜呜她真好真可爱！居然给我棒棒糖！', value: 3 },
-          { label: '一脸懵逼，作挠头状', value: 2 },
-          { label: '这也许是一种新型诈骗？还是走开为好。', value: 1 }
+          { label: 'Ư ư cô ấy tốt quá dễ thương quá! Lại còn cho tôi kẹo!', value: 3 },
+          { label: 'Mặt ngẩn ngơ, gãi đầu', value: 2 },
+          { label: 'Có lẽ đây là loại lừa đảo mới? Hay tránh đi cho chắc.', value: 1 }
         ]
       },
       {
         id: 'q15', dim: 'A2',
-        text: '快考试了，学校规定必须上晚自习，请假会扣分，但今晚你约了女/男神一起玩《绝地求生：刺激战场》（一款刺激的游戏），你怎么办？',
+        text: 'Sắp thi rồi, trường quy định phải học buổi tối, xin nghỉ sẽ bị trừ điểm, nhưng tối nay bạn hẹn nữ/male thần chơi PUBG Mobile, bạn làm sao?',
         options: [
-          { label: '翘了！反正就一次！', value: 1 },
-          { label: '干脆请个假吧。', value: 2 },
-          { label: '都快考试了还去啥。', value: 3 }
+          { label: 'Bỏ luôn! Dù sao cũng chỉ một lần!', value: 1 },
+          { label: 'Cứ xin nghỉ vậy.', value: 2 },
+          { label: 'Sắp thi rồi còn đi gì.', value: 3 }
         ]
       },
       {
         id: 'q16', dim: 'A2',
-        text: '我喜欢打破常规，不喜欢被束缚',
+        text: 'Tôi thích phá vỡ quy tắc, không thích bị ràng buộc',
         options: [
-          { label: '认同', value: 1 },
-          { label: '保持中立', value: 2 },
-          { label: '不认同', value: 3 }
+          { label: 'Đồng ý', value: 1 },
+          { label: 'Giữ trung lập', value: 2 },
+          { label: 'Không đồng ý', value: 3 }
         ]
       },
       {
         id: 'q17', dim: 'A3',
-        text: '我做事通常有目标。',
+        text: 'Tôi làm việc thường có mục tiêu.',
         options: [
-          { label: '不认同', value: 1 },
-          { label: '中立', value: 2 },
-          { label: '认同', value: 3 }
+          { label: 'Không đồng ý', value: 1 },
+          { label: 'Trung lập', value: 2 },
+          { label: 'Đồng ý', value: 3 }
         ]
       },
       {
         id: 'q18', dim: 'A3',
-        text: '突然某一天，我意识到人生哪有什么他妈的狗屁意义，人不过是和动物一样被各种欲望支配着，纯纯是被激素控制的东西，饿了就吃，困了就睡，一发情就想交配，我们简直和猪狗一样没什么区别。',
+        text: 'Bỗng một ngày, tôi nhận ra đời người có chó gì ý nghĩa chó má, con người chẳng qua như động vật bị dục vọng chi phối, thuần túy bị hormone kiểm soát, đói thì ăn, mệt thì ngủ, động tình thì muốn giao phối, chúng ta chẳng khác gì heo chó.',
         options: [
-          { label: '是这样的。', value: 1 },
-          { label: '也许是，也许不是。', value: 2 },
-          { label: '这简直是胡扯', value: 3 }
+          { label: 'Đúng vậy.', value: 1 },
+          { label: 'Có lẽ đúng, có lẽ không.', value: 2 },
+          { label: 'Đây đúng là nói bậy', value: 3 }
         ]
       },
       {
         id: 'q19', dim: 'Ac1',
-        text: '我做事主要为了取得成果和进步，而不是避免麻烦和风险。',
+        text: 'Tôi làm việc chủ yếu để đạt kết quả và tiến bộ, chứ không phải để tránh rắc rối và rủi ro.',
         options: [
-          { label: '不认同', value: 1 },
-          { label: '中立', value: 2 },
-          { label: '认同', value: 3 }
+          { label: 'Không đồng ý', value: 1 },
+          { label: 'Trung lập', value: 2 },
+          { label: 'Đồng ý', value: 3 }
         ]
       },
       {
         id: 'q20', dim: 'Ac1',
-        text: '你因便秘坐在马桶上（已长达30分钟），拉不出很难受。此时你更像',
+        text: 'Bạn bị táo bón ngồi bồn cầu (đã 30 phút), không ra rất khó chịu. Lúc này bạn giống',
         options: [
-          { label: '再坐三十分钟看看，说不定就有了。', value: 1 },
-          { label: '用力拍打自己的屁股并说：“死屁股，快拉啊！”', value: 2 },
-          { label: '使用开塞露，快点拉出来才好。', value: 3 }
+          { label: 'Ngồi thêm 30 phút xem sao, biết đâu có.', value: 1 },
+          { label: 'Vỗ mạnh mông mình và nói: “Cái mông chết tiệt, mau ra đi!”', value: 2 },
+          { label: 'Dùng thuốc xổ, mau ra cho xong.', value: 3 }
         ]
       },
       {
         id: 'q21', dim: 'Ac2',
-        text: '我做决定比较果断，不喜欢犹豫',
+        text: 'Tôi quyết định khá dứt khoát, không thích do dự',
         options: [
-          { label: '不认同', value: 1 },
-          { label: '中立', value: 2 },
-          { label: '认同', value: 3 }
+          { label: 'Không đồng ý', value: 1 },
+          { label: 'Trung lập', value: 2 },
+          { label: 'Đồng ý', value: 3 }
         ]
       },
       {
         id: 'q22', dim: 'Ac2',
-        text: '此题没有题目，请盲选',
+        text: 'Câu này không có đề, xin mù chọn',
         options: [
-          { label: '反复思考后感觉应该选A？', value: 1 },
-          { label: '啊，要不选B？', value: 2 },
-          { label: '不会就选C？', value: 3 }
+          { label: 'Suy nghĩ kỹ cảm thấy nên chọn A?', value: 1 },
+          { label: 'Ừ, hay chọn B?', value: 2 },
+          { label: 'Không biết thì chọn C?', value: 3 }
         ]
       },
       {
         id: 'q23', dim: 'Ac3',
-        text: '别人说你“执行力强”，你内心更接近哪句？',
+        text: 'Người khác nói bạn “thực thi lực mạnh”, trong lòng bạn gần với câu nào?',
         options: [
-          { label: '我被逼到最后确实执行力超强。。。', value: 1 },
-          { label: '啊，有时候吧。', value: 2 },
-          { label: '是的，事情本来就该被推进', value: 3 }
+          { label: 'Tôi bị ép đến cuối cùng thì thực thi lực siêu mạnh...', value: 1 },
+          { label: 'À, có lúc vậy.', value: 2 },
+          { label: 'Đúng, việc vốn dĩ phải được đẩy tiến', value: 3 }
         ]
       },
       {
         id: 'q24', dim: 'Ac3',
-        text: '我做事常常有计划，____',
+        text: 'Tôi làm việc thường có kế hoạch, ____',
         options: [
-          { label: '然而计划不如变化快。', value: 1 },
-          { label: '有时能完成，有时不能。', value: 2 },
-          { label: '我讨厌被打破计划。', value: 3 }
+          { label: 'Tuy nhiên kế hoạch không bằng thay đổi nhanh.', value: 1 },
+          { label: 'Có lúc hoàn thành, có lúc không.', value: 2 },
+          { label: 'Tôi ghét bị phá vỡ kế hoạch.', value: 3 }
         ]
       },
       {
         id: 'q25', dim: 'So1',
-        text: '你因玩《第五人格》（一款刺激的游戏）而结识许多网友，并被邀请线下见面，你的想法是？',
+        text: 'Bạn vì chơi Identity V mà quen nhiều netizen, bị mời gặp mặt ngoại tuyến, ý nghĩ của bạn là?',
         options: [
-          { label: '网上口嗨下就算了，真见面还是有点忐忑。', value: 1 },
-          { label: '见网友也挺好，反正谁来聊我就聊两句。', value: 2 },
-          { label: '我会打扮一番并热情聊天，万一呢，我是说万一呢？', value: 3 }
+          { label: 'Online miệng lưỡi thôi, thật gặp vẫn hơi lo.', value: 1 },
+          { label: 'Gặp netizen cũng được, ai đến chat thì chat vài câu.', value: 2 },
+          { label: 'Tôi sẽ trang điểm và nhiệt tình chat, biết đâu, tôi nói biết đâu?', value: 3 }
         ]
       },
       {
         id: 'q26', dim: 'So1',
-        text: '朋友带了ta的朋友一起来玩，你最可能的状态是',
+        text: 'Bạn bè dẫn bạn của ta đến chơi, trạng thái bạn dễ nhất là',
         options: [
-          { label: '对“朋友的朋友”天然有点距离感，怕影响二人关系', value: 1 },
-          { label: '看对方，能玩就玩。', value: 2 },
-          { label: '朋友的朋友应该也算我的朋友！要热情聊天', value: 3 }
+          { label: 'Với “bạn của bạn” tự nhiên có khoảng cách, sợ ảnh hưởng quan hệ hai người', value: 1 },
+          { label: 'Xem đối phương, chơi được thì chơi.', value: 2 },
+          { label: 'Bạn của bạn cũng là bạn của tôi! Phải nhiệt tình chat', value: 3 }
         ]
       },
       {
         id: 'q27', dim: 'So2',
-        text: '我和人相处主打一个电子围栏，靠太近会自动报警。',
+        text: 'Tôi giao tiếp với người chủ yếu là hàng rào điện tử, lại gần quá sẽ tự động báo động.',
         options: [
-          { label: '认同', value: 3 },
-          { label: '中立', value: 2 },
-          { label: '不认同', value: 1 }
+          { label: 'Đồng ý', value: 3 },
+          { label: 'Trung lập', value: 2 },
+          { label: 'Không đồng ý', value: 1 }
         ]
       },
       {
         id: 'q28', dim: 'So2',
-        text: '我渴望和我信任的人关系密切，熟得像失散多年的亲戚。',
+        text: 'Tôi khao khát quan hệ mật thiết với người tôi tin tưởng, thân như người thân thất lạc nhiều năm.',
         options: [
-          { label: '认同', value: 1 },
-          { label: '中立', value: 2 },
-          { label: '不认同', value: 3 }
+          { label: 'Đồng ý', value: 1 },
+          { label: 'Trung lập', value: 2 },
+          { label: 'Không đồng ý', value: 3 }
         ]
       },
       {
         id: 'q29', dim: 'So3',
-        text: '有时候你明明对一件事有不同的、负面的看法，但最后没说出来。多数情况下原因是：',
+        text: 'Đôi khi bạn rõ ràng có ý kiến khác biệt, tiêu cực về một việc, nhưng cuối cùng không nói ra. Hầu hết nguyên nhân là:',
         options: [
-          { label: '这种情况较少。', value: 1 },
-          { label: '可能碍于情面或者关系。', value: 2 },
-          { label: '不想让别人知道自己是个阴暗的人。', value: 3 }
+          { label: 'Tình huống này ít xảy ra.', value: 1 },
+          { label: 'Có lẽ vì nể mặt hoặc quan hệ.', value: 2 },
+          { label: 'Không muốn người khác biết mình là người âm u.', value: 3 }
         ]
       },
       {
         id: 'q30', dim: 'So3',
-        text: '我在不同人面前会表现出不一样的自己',
+        text: 'Tôi ở trước mặt người khác sẽ thể hiện bản thân khác nhau',
         options: [
-          { label: '不认同', value: 1 },
-          { label: '中立', value: 2 },
-          { label: '认同', value: 3 }
+          { label: 'Không đồng ý', value: 1 },
+          { label: 'Trung lập', value: 2 },
+          { label: 'Đồng ý', value: 3 }
         ]
       }
     ];
@@ -1076,189 +1072,189 @@
         id: 'drink_gate_q1',
         special: true,
         kind: 'drink_gate',
-        text: '您平时有什么爱好？',
+        text: 'Bạn thường có sở thích gì?',
         options: [
-          { label: '吃喝拉撒', value: 1 },
-          { label: '艺术爱好', value: 2 },
-          { label: '饮酒', value: 3 },
-          { label: '健身', value: 4 }
+          { label: 'Ăn uống đi vệ sinh', value: 1 },
+          { label: 'Sở thích nghệ thuật', value: 2 },
+          { label: 'Uống rượu', value: 3 },
+          { label: 'Tập gym', value: 4 }
         ]
       },
       {
         id: 'drink_gate_q2',
         special: true,
         kind: 'drink_trigger',
-        text: '您对饮酒的态度是？',
+        text: 'Thái độ của bạn với uống rượu là?',
         options: [
-          { label: '小酌怡情，喝不了太多。', value: 1 },
-          { label: '我习惯将白酒灌在保温杯，当白开水喝，酒精令我信服。', value: 2 }
-        ]
+          { label: 'Nhấm nháp vui vẻ, không uống được nhiều.', value: 1 },
+          { label: 'Tôi quen đổ rượu trắng vào cốc giữ nhiệt, uống như nước lọc, rượu khiến tôi tin phục.', value: 2 }
+                ]
       }
     ];
 
     const TYPE_LIBRARY = {
   "CTRL": {
     "code": "CTRL",
-    "cn": "拿捏者",
-    "intro": "怎么样，被我拿捏了吧？",
-    "desc": "恭喜您，您测出了全中国最为罕见的人格，您是宇宙熵增定律的天然反抗者！全世界所谓成功人士里，99.99%都是您的拙劣模仿者。CTRL人格，是行走的人形自走任务管理器，普通人眼中的“规则”，在您这里只是出厂的基础参数设置；凡人所谓的“计划”，对您而言不过是心血来潮的随手涂鸦。拥有一个CTRL朋友意味着什么？意味着你的人生导航系统会变得更加精准、高效。因为CTRL最会拿捏了。CTRL会在你人生列车即将脱轨的前一秒，用一个“Ctrl+S”帮你硬核存档，再用一套无法拒绝的逻辑把你强行拽回正轨。他们是你混乱生活最后的备份盘，是宇宙崩塌前唯一还亮着的那个重启键。"
-  },
+    "cn": "Bậc thầy",
+    "intro": "Thế nào, bị tao nắm thóp rồi chứ?",
+    "desc": "Chúc mừng bạn, bạn đã đo được nhân cách hiếm nhất thế giới! Bạn là kẻ phản kháng tự nhiên của định luật entropy tăng của vũ trụ! Trong số những người thành công trên thế giới, 99.99% đều là bản sao vụng về của bạn. Nhân cách CTRL là bộ quản lý nhiệm vụ tự hành hình người. “Quy tắc” trong mắt người thường chỉ là thông số cơ bản xuất xưởng; “kế hoạch” của kẻ phàm chỉ là nét vẽ tùy hứng. Có một người bạn CTRL nghĩa là gì? Nghĩa là hệ thống định hướng cuộc đời bạn sẽ trở nên chính xác và hiệu quả hơn. Vì CTRL giỏi nắm thóp nhất. CTRL sẽ dùng “Ctrl+S” lưu cứng ngay trước giây cuộc đời bạn trật đường ray, rồi dùng logic không thể từ chối kéo bạn trở lại quỹ đạo. Họ là đĩa sao lưu cuối cùng của cuộc sống hỗn loạn của bạn, là phím khởi động lại duy nhất còn sáng trước khi vũ trụ sụp đổ."
+    },
   "ATM-er": {
     "code": "ATM-er",
-    "cn": "送钱者",
-    "intro": "你以为我很有钱吗？",
-    "desc": "恭喜您，您竟然测出了这个世界上最稀有的人格。您或将成为金融界的未解之谜——是的，ATM-er不一定真的“送钱”，但可能永远在“支付”。支付时间、支付精力、支付耐心、支付一个本该安宁的夜晚。因此像一部老旧但坚固的ATM机，插进去的是别人的焦虑和麻烦，吐出来的是“没事，有我”的安心保证。您的人生就是一场盛大的、无人喝彩的单人付账秀。您竟用磐石般的可靠，承受了瀑布般的索取，偶尔夜深人静才会对着账单——可能是精神上的——发出一声叹息：我这该死的、无处安放的责任心啊。"
+    "cn": "Máy ATM đi bộ",
+    "intro": "Bạn nghĩ tôi rất giàu à?",
+    "desc": "Chúc mừng bạn, bạn đã đo được nhân cách hiếm nhất thế giới. Bạn có thể trở thành bí ẩn chưa giải đáp của giới tài chính — đúng vậy, ATM-er chưa chắc đã thật sự “gửi tiền”, nhưng có thể mãi mãi đang “chi trả”. Chi trả thời gian, chi trả năng lượng, chi trả kiên nhẫn, chi trả cả một đêm vốn dĩ nên yên bình. Vì vậy giống như một máy ATM cũ kỹ nhưng chắc chắn, nhét vào là lo lắng và rắc rối của người khác, nhả ra là lời đảm bảo “Không sao, có tôi”. Cuộc đời bạn là một vở kịch trả tiền một mình hoành tráng, không ai vỗ tay. Bạn dùng sự đáng tin cậy như tảng đá, gánh chịu sự đòi hỏi như thác nước, thỉnh thoảng đêm khuya tĩnh mịch mới đối diện hóa đơn — có thể là tinh thần — mà thở dài: Trách nhiệm chết tiệt của tôi, không biết đặt ở đâu đây."  
   },
   "Dior-s": {
     "code": "Dior-s",
-    "cn": "屌丝",
-    "intro": "等着我屌丝逆袭。",
-    "desc": "恭喜！您并非屌丝，您是犬儒主义先贤第欧根尼失散多年的精神传人，因为屌丝的全称是 Diogenes' Original Realist - sage。Dior-s人格，是对当代消费主义陷阱和成功学PUA最彻底的蔑视。他们不是“不求上进”，而是早已看穿一切“上进”的尽头不过是更高级的牢房。屌丝有着大智慧。当别人在追逐风口，被时代的巨浪拍得七荤八素时，Dior-s早已在自己的精神木桶里晒着太阳，达到了“人桶合一”的至高境界。他们信奉的不是空话，是经过亿万次实践检验的物理法则与生物本能：一、躺着比站着舒服；二、饭点到了就得干饭。"
+    "cn": "Kẻ thua cuộc",
+    "intro": "Chờ tao lật ngược tình thế.",
+    "desc": "Chúc mừng! Bạn không phải kẻ thua cuộc, bạn là người thừa kế tinh thần thất lạc nhiều năm của nhà hiền triết hoài nghi Diogenes. Tên đầy đủ của kẻ thua cuộc là Diogenes' Original Realist - sage. Nhân cách Dior-s là sự khinh miệt triệt để nhất với bẫy tiêu dùng hiện đại và PUA thành công học. Họ không phải “không cầu tiến”, mà đã sớm nhìn thấu “cầu tiến” đến cùng chỉ là nhà tù cao cấp hơn. Kẻ thua cuộc có trí tuệ lớn. Khi người khác đuổi theo xu hướng, bị sóng thời đại đập cho thất điên bát đảo, Dior-s đã sớm nằm trong thùng gỗ tinh thần phơi nắng, đạt đến cảnh giới cao nhất “người thùng hợp nhất”. Họ tin không phải lời suông, mà là quy luật vật lý và bản năng sinh học đã được kiểm chứng qua hàng tỷ lần thực tiễn: 1. Nằm thoải mái hơn đứng; 2. Đến giờ ăn thì phải ăn."  
   },
   "BOSS": {
     "code": "BOSS",
-    "cn": "领导者",
-    "intro": "方向盘给我，我来开。",
-    "desc": "BOSS是一个手里永远拿着方向盘的人。哪怕油箱已经亮了红灯，哪怕导航在胡说八道，你都会面无表情地说一句：我来开。然后真的把车开到了目的地。该人格拥有独立的物理法则——永恒向上定律。BOSS人格看世界，就像玩通关了的玩家在看新手教程。效率是他们的信仰，秩序是他们的呼吸。他们不是“自带领袖气场”，他们本身就是人形的气场发生器，方圆五米内，空气都会自动变得严肃而高效。他们眼中的“自我突破”，约等于普通人眼中的“自虐”。今天掌握一门新语言，明天考下一个专业证书，后天就计划殖民火星。你说这太卷了，他会用一种看弱鸡的眼神看着你：不是我太狠，是你太松。"
-  },
+    "cn": "Người lãnh đạo",
+    "intro": "Bánh lái đưa đây, tao lái.",
+    "desc": "BOSS là người luôn cầm chắc tay lái. Dù bình xăng đã đỏ đèn, dù GPS đang nói bậy, bạn vẫn mặt không đổi sắc nói: Tao lái. Rồi thật sự đưa xe đến đích. Nhân cách này có quy luật vật lý riêng — Định luật vĩnh cửu hướng lên. BOSS nhìn thế giới như game thủ đã thông quan xem hướng dẫn tân thủ. Hiệu quả là đức tin của họ, trật tự là hơi thở của họ. Họ không phải “tự mang khí chất lãnh đạo”, họ chính là máy phát khí chất hình người. Trong bán kính 5 mét, không khí sẽ tự động trở nên nghiêm túc và hiệu quả. “Phá vỡ bản thân” trong mắt họ gần như “tự ngược” trong mắt người thường. Hôm nay học một ngôn ngữ mới, mai thi chứng chỉ chuyên môn tiếp theo, ngày kia đã lập kế hoạch chinh phục sao Hỏa. Bạn nói quá卷, họ sẽ nhìn bạn bằng ánh mắt xem gà yếu: Không phải tao quá狠, mà là mày quá lỏng lẻo."
+    },
   "THAN-K": {
     "code": "THAN-K",
-    "cn": "感恩者",
-    "intro": "我感谢苍天！我感谢大地！",
-    "desc": "恭喜您，您测出了全中国最为罕见的人格。您应当感谢我！感谢您在此刻拥有了生命的滋润！倘若您上班路上堵车了？您也应当说一句：我感谢这次堵车，它让我有更多时间聆听这首美妙的歌曲，并欣赏窗外每一张因焦虑而扭曲的脸庞，让我更珍惜内心的平静。是的，THAN-K拥有温润如玉的性格和海纳百川的胸怀。他们眼中的世界没有完全的坏人，只有“尚未被感恩光芒照耀到的朋友”。拥有一个THAN-K朋友，就像身边多了一个永不枯竭的正能量发射塔。TA甚至能帮你从墙角的霉斑里发现一幅梵高风格的星空图。"
-  },
+    "cn": "Người biết ơn",
+    "intro": "Tôi cảm ơn trời xanh! Tôi cảm ơn đất mẹ!",
+    "desc": "Chúc mừng bạn, bạn đã đo được nhân cách hiếm nhất thế giới. Bạn nên cảm ơn tôi! Cảm ơn bạn lúc này đang được cuộc sống nuôi dưỡng! Nếu trên đường đi làm bị kẹt xe? Bạn cũng nên nói: Tôi cảm ơn lần kẹt xe này, nó cho tôi nhiều thời gian hơn để nghe bài hát tuyệt vời này, và ngắm nhìn từng khuôn mặt méo mó vì lo lắng ngoài cửa sổ, khiến tôi càng trân trọng sự bình yên trong lòng. Đúng vậy, THAN-K sở hữu tính cách ôn hòa như ngọc và tấm lòng bao la. Trong mắt họ, thế giới không có người xấu hoàn toàn, chỉ có “những người bạn chưa được ánh sáng biết ơn chiếu rọi”. Có một người bạn THAN-K bên cạnh giống như có thêm một tháp phát năng lượng tích cực không bao giờ cạn. Họ thậm chí có thể giúp bạn từ vết mốc trên góc tường tìm ra một bức tranh phong cách Van Gogh về bầu trời sao."
+    },
   "OH-NO": {
     "code": "OH-NO",
-    "cn": "哦不人",
-    "intro": "哦不！我怎么会是这个人格？！",
-    "desc": "“哦不！”并非恐惧的尖叫，而是一种顶级的智慧。当普通人看到一个杯子放在桌沿，哦不人看到的是一场由“水渍-短路-火灾-全楼疏散-经济损失-蝴蝶效应-世界末日”构成的灾难史诗。于是，伴随着一声发自灵魂深处的 Oh, no!，他们会以迅雷不及掩耳之势把杯子挪到桌子正中央，然后再垫上一张吸水杯垫。哦不人对“边界”有一种近乎偏执的尊重：你的就是你的，我的就是我的。所有意外和风险都已经在他的“Oh, no!”声中，被扼杀在了萌芽状态。他们是秩序的守护神，是混乱世界里最后那批神经绷得很直的体面人。"
-  },
+    "cn": "Người hay làm quá",
+    "intro": "Ô không! Sao tôi lại là nhân cách này?!",
+    "desc": "“Ô không!” không phải tiếng hét sợ hãi, mà là một trí tuệ đỉnh cao. Khi người thường thấy cái cốc đặt ở mép bàn, người Ô không thấy một sử thi thảm họa từ “vết nước - chập điện - cháy nhà - sơ tán cả tòa - tổn thất kinh tế - hiệu ứng bướm - tận thế”. Thế là, kèm theo một tiếng “Oh, no!” phát ra từ sâu thẳm linh hồn, họ sẽ với tốc độ sét đánh dời cái cốc vào chính giữa bàn, rồi lót thêm một miếng lót cốc thấm nước. Người Ô không có sự tôn trọng gần như cuồng tín với “ranh giới”: của bạn là của bạn, của tôi là của tôi. Tất cả bất ngờ và rủi ro đều đã bị tiếng “Ô không!” của họ bóp chết từ trong trứng nước. Họ là thần hộ vệ của trật tự, là những người cuối cùng còn giữ dây thần kinh căng thẳng và thể diện trong thế giới hỗn loạn."
+    },
   "GOGO": {
     "code": "GOGO",
-    "cn": "行者",
-    "intro": "gogogo~出发咯",
-    "desc": "经研究发现，GOGO人格的大脑构造与常人有根本性不同。GOGO活在一个极致的“所见即所得”世界里，人生信条简单粗暴到令人发指：只要我闭上眼睛，天就是黑的；只要我把钱都花了，我就没有钱了；只要我站在斑马线上，我现在就是行人了。逻辑完美闭环，根本无法反驳。别人还在为“先有鸡还是先有蛋”而辩论，GOGO行者已经把鸡和蛋一起做成了一盘“鸡生蛋，蛋生鸡之终极奥义盖浇饭”。他们不是在“解决问题”，他们是在“清除待办事项”。对他们来说，世界上只有两种状态：已完成，和即将被我完成。"
-  },
+    "cn": "Người chân đi",
+    "intro": "gogogo~ Xuất phát thôi",
+    "desc": "Sau khi nghiên cứu phát hiện, cấu tạo não bộ của nhân cách GOGO có sự khác biệt căn bản với người thường. GOGO sống trong một thế giới cực đoan “thấy gì được nấy”. Tín điều cuộc đời đơn giản thô bạo đến mức kinh người: Chỉ cần tôi nhắm mắt, trời là đen; chỉ cần tôi tiêu hết tiền, tôi không còn tiền; chỉ cần tôi đứng trên vạch zebr a, lúc này tôi chính là người đi bộ. Logic khép kín hoàn hảo, hoàn toàn không thể phản bác. Người khác còn tranh luận “trứng có trước hay gà có trước”, GOGO đã biến gà và trứng thành một đĩa cơm chan “gà sinh trứng, trứng sinh gà chiêu cuối cùng”. Họ không phải “giải quyết vấn đề”, họ đang “xóa sạch việc cần làm”. Với họ, thế giới chỉ có hai trạng thái: Đã hoàn thành, và sắp bị tôi hoàn thành."
+    },
   "SEXY": {
     "code": "SEXY",
-    "cn": "尤物",
-    "intro": "您就是天生的尤物！",
-    "desc": "当您走进一个房间，照明系统会自动将您识别为天生的尤物，并自觉调暗亮度，以避免能源浪费。当您微笑时，您就变成了微笑着的尤物，周围的空气湿度也会显著下降，因为水蒸气都凝结成了人眼中的爱心。无论是谁，都容易对您的存在产生一种超标的注意力。传说，如果有足够多的SEXY人格聚集在一起开派对，其释放出的综合魅力能量足以暂时扭曲时空结构，让参加者产生“时间变慢了”的幸福错觉。他们不需要卖力表达，很多时候，单是存在本身就已经很像一篇华丽到过分的赋。"
-  },
+    "cn": "Người vạn người mê",
+    "intro": "Bạn chính là thiên sinh yêu vật!",
+    "desc": "Khi bạn bước vào một căn phòng, hệ thống chiếu sáng sẽ tự động nhận diện bạn là thiên sinh yêu vật, và tự giác giảm độ sáng để tránh lãng phí năng lượng. Khi bạn cười, bạn trở thành yêu vật đang cười, độ ẩm không khí xung quanh cũng giảm rõ rệt vì hơi nước đều ngưng tụ thành hình trái tim trong mắt người khác. Bất kể ai cũng dễ bị sự tồn tại của bạn thu hút vượt mức. Truyền thuyết kể rằng, nếu có đủ nhiều nhân cách SEXY tụ họp mở tiệc, năng lượng quyến rũ tổng hợp tỏa ra đủ để tạm thời bóp méo cấu trúc không-thời gian, khiến người tham gia产生 ảo giác hạnh phúc “thời gian chậm lại”. Họ không cần cố gắng biểu đạt, nhiều khi chỉ cần tồn tại thôi đã giống như một bài赋 hoa mỹ đến mức quá đáng."
+    },
   "LOVE-R": {
     "code": "LOVE-R",
-    "cn": "多情者",
-    "intro": "爱意太满，现实显得有点贫瘠。",
-    "desc": "LOVE-R人格像远古神话时代幸存至今的珍稀物种，其存在概率比你在马桶里钓到作者胳膊的概率还低。您简直是这个钢铁森林时代最后的、也是最不合时宜的吟游诗人。因为您的情感处理器不是二进制的，而是彩虹制的。一片落叶，在常人眼里只是“秋天来了”，在LOVE-R眼中，则是一场关于轮回、牺牲与无言之爱的十三幕悲喜剧。您内心世界像一座永不关门的主题公园，一生都在寻找那个能看懂园区地图、并愿意陪你坐旋转木马直到宇宙尽头的灵魂伴侣。"
-  },
+    "cn": "Người đa tình",
+    "intro": "Tình yêu quá đầy, thực tế hơi nghèo nàn.",
+    "desc": "Nhân cách LOVE-R giống như loài quý hiếm còn sót lại từ thời thần thoại cổ đại, xác suất tồn tại còn thấp hơn việc bạn câu được cánh tay tác giả trong bồn cầu. Bạn chính là nhà thơ du ca cuối cùng và lạc lõng nhất của thời đại rừng thép này. Vì bộ xử lý cảm xúc của bạn không phải nhị phân, mà là cầu vồng. Một chiếc lá rơi, trong mắt người thường chỉ là “mùa thu đến”, trong mắt LOVE-R lại là một vở bi hài kịch Màn 13 về luân hồi, hy sinh và tình yêu vô ngôn. Thế giới nội tâm của bạn như một công viên chủ đề không bao giờ đóng cửa, cả đời đang tìm kiếm người bạn đồng hành có thể đọc hiểu bản đồ công viên, và sẵn sàng ngồi đu quay cùng bạn đến tận cùng vũ trụ."
+    },
   "MUM": {
     "code": "MUM",
-    "cn": "妈妈",
-    "intro": "或许...我可以叫你妈妈吗....?",
-    "desc": "恭喜您，您测出了全中国最稀有的妈妈人格。是的，在混沌未开、时间尚无姓名之前，在第一颗恒星打出第一个嗝之前，就已经有了妈妈。妈妈人格的底色是温柔，擅长感知情绪，具有超强共情力，知道什么时候该停下来，什么时候该对自己说一句“算了”。妈妈像一个医生，治愈了别人的不开心。只可惜，当妈妈落泪时，TA给自己的药，剂量总是比给别人小一号。MUM对自己的温柔，常常打了折。"
-  },
+    "cn": "Mẹ trẻ",
+    "intro": "Có lẽ... em có thể gọi anh là mẹ được không...?",
+    "desc": "Chúc mừng bạn, bạn đã đo được nhân cách Mẹ hiếm nhất thế giới. Đúng vậy, trước khi hỗn mang khai thiên, trước khi thời gian có tên, trước khi ngôi sao đầu tiên ợ hơi lần đầu, đã có Mẹ rồi. Nhân cách Mẹ có màu nền là dịu dàng, giỏi cảm nhận cảm xúc, có sức đồng cảm siêu mạnh, biết lúc nào nên dừng lại, lúc nào nên tự nói với mình “Thôi vậy”. Mẹ như một bác sĩ, chữa lành nỗi buồn của người khác. Chỉ tiếc là khi Mẹ rơi nước mắt, liều thuốc TA tự kê cho mình luôn nhỏ hơn một cỡ so với cho người khác. Sự dịu dàng của MUM dành cho bản thân thường bị giảm giá."
+    },
   "FAKE": {
     "code": "FAKE",
-    "cn": "伪人",
-    "intro": "已经，没有人类了。",
-    "desc": "SCP基金会紧急报告：项目编号 SCP-CN-████ “伪人”。在社交场合，伪人是八面玲珑的存在，因为他们切换人格面具比切换手机输入法还快。上一秒还是推心置腹的铁哥们模式，下一秒领导来了，瞬间切换成沉稳可靠好员工模式，连脸上的光泽度和卷曲度都会发生微调。你以为你交到了一个真心懂你的朋友？醒醒。你只是幸运地遇到了一个善于伪装、高性能的仿生人罢了。夜深人静时，伪人把面具一层层摘下来，最后才发现，面具下空得很，正是这些面具构成了自己。"
-  },
+    "cn": "Kẻ đeo mặt nạ",
+    "intro": "Đã không còn con người nữa.",
+    "desc": "Báo cáo khẩn cấp của Quỹ SCP: Mã dự án SCP-CN-████ “Người giả”. Trong các dịp xã giao, người giả là tồn tại tám mặt linh hoạt, vì họ chuyển đổi mặt nạ nhân cách còn nhanh hơn chuyển bàn phím điện thoại. Giây trước còn là mode anh em tâm giao, giây sau lãnh đạo đến, lập tức chuyển sang mode nhân viên ổn định đáng tin cậy, ngay cả độ bóng và độ xoăn trên mặt cũng điều chỉnh vi mô. Bạn tưởng mình đã kết bạn với một người thật sự hiểu bạn? Tỉnh lại đi. Bạn chỉ may mắn gặp được một sinh vật giả người cao cấp giỏi ngụy trang mà thôi. Đêm khuya tĩnh mịch, người giả cởi từng lớp mặt nạ, cuối cùng mới phát hiện dưới mặt nạ trống rỗng, chính những mặt nạ ấy đã cấu thành nên bản thân."
+    },
   "OJBK": {
     "code": "OJBK",
-    "cn": "无所谓人",
-    "intro": "我说随便，是真的随便。",
-    "desc": "让我们直面这个词的粗犷本质：OJBK。这已经不是一种人格，而是一种统治哲学。当凡人面临“中午吃米饭还是面条”的世纪抉择时，大脑在激烈燃烧卡路里；而OJBK人格，会用一种批阅奏章般的淡然，轻飘飘地吐出两个字：都行。这不是没主见，这是在告诉你：尔等凡俗的选择，于朕而言，皆为蝼蚁。为什么不争执？因为跟草履虫辩论宇宙的未来毫无意义。为什么不较真？因为帝王不会在意脚下的尘埃是往左飘还是往右飘。"
-  },
+    "cn": "Người bất cần",
+    "intro": "Tao nói tùy tiện là thật sự tùy tiện.",
+    "desc": "Hãy đối mặt với bản chất thô ráp của từ này: OJBK. Đây không còn là một nhân cách, mà là một triết lý thống trị. Khi người phàm đối mặt với lựa chọn thế kỷ “trưa ăn cơm hay mì”, não bộ đang đốt cháy calo kịch liệt; còn nhân cách OJBK sẽ dùng vẻ thản nhiên như đang duyệt tấu chương, nhẹ nhàng phun ra hai chữ: Đều được. Đây không phải thiếu chủ kiến, mà đang nói với bạn: Những lựa chọn phàm tục của các ngươi, đối với trẫm đều là loài kiến. Tại sao không tranh cãi? Vì tranh luận với trùng chân roi về tương lai vũ trụ hoàn toàn vô nghĩa. Tại sao không so đo? Vì đế vương sẽ không quan tâm bụi dưới chân là bay sang trái hay sang phải."
+    },
   "MALO": {
     "code": "MALO",
-    "cn": "吗喽",
-    "intro": "人生是个副本，而我只是一只吗喽。",
-    "desc": "朋友，你不是“童心未泯”，你压根就没进化。你的灵魂还停留在那个挂在树上荡秋千、看见香蕉就两眼放光的快乐时代。当人类祖先决定从树上下来、学会直立行走、穿上西装打领带时，吗喽人格的祖先在旁边的大树上看着他们，挠了挠屁股，嘴里发出一声不屑的“吱”。他们看透了一切：所谓的“文明”，不过是一场最无聊、最不好玩的付费游戏。规则偶尔是可以打破的，天花板是用来倒挂的，会议室是用来表演后空翻的。MALO本身就是一个从巨大脑洞里掉出来、忘了关门的奇思妙想。"
-  },
+    "cn": "Kiếp làm thuê",
+    "intro": "Cuộc đời là bản phụ bản, còn tao chỉ là một con Malo.",
+    "desc": "Bạn ơi, bạn không phải “tâm hồn trẻ con”, mà là chưa từng tiến hóa. Linh hồn bạn vẫn kẹt ở thời đại vui vẻ treo trên cây đu quay, thấy chuối là hai mắt sáng rỡ. Khi tổ tiên loài người quyết định từ trên cây xuống, học đi thẳng, mặc vest thắt cà vạt, tổ tiên nhân cách Malo ở cây bên cạnh nhìn họ, gãi mông, miệng kêu “chít” khinh thường. Họ nhìn thấu tất cả: cái gọi là “văn minh” chỉ là trò chơi trả phí nhàm chán và không vui nhất. Quy tắc thỉnh thoảng có thể phá, trần nhà là để treo ngược, phòng họp là để biểu diễn nhào lộn sau. Thân phận con ong cái kiến chính là ý tưởng kỳ quặc rơi ra từ cái đầu to lớn, quên đóng cửa."
+    },
   "JOKE-R": {
     "code": "JOKE-R",
-    "cn": "小丑",
-    "intro": "原来我们都是小丑。",
-    "desc": "请注意，JOKE-R人格不是一个“人”，更像一个把笑话穿在身上的小丑。你打开一层，是个笑话；再打开一层，是个段子；你一层层打开，直到最后，你发现最里面……是空的，只剩下一点微弱的回声在说：哈，没想到吧。JOKE-R是社交场合的气氛组组长兼唯一指定火力输出。有他们在，场子就不会冷。所有人前仰后合地笑着，而笑得最开心的，往往也是他们自己——用最大的笑声，盖住心碎的声音。"
-  },
+    "cn": "Hề",
+    "intro": "Hóa ra chúng ta đều là hề.",
+    "desc": "Xin lưu ý, nhân cách JOKE-R không phải là một “con người”, mà giống như một chú hề mặc toàn thân là trò đùa. Bạn mở một lớp là trò đùa; mở thêm một lớp là câu chuyện cười; bạn mở từng lớp, đến cuối cùng bạn phát hiện bên trong sâu nhất…… trống rỗng, chỉ còn lại tiếng vang yếu ớt nói: Ha, không ngờ chứ. JOKE-R là trưởng nhóm không khí và là nguồn gây cười duy nhất trong các buổi xã giao. Có họ ở đó, không khí sẽ không bao giờ lạnh. Mọi người cười ngửa trước ngả sau, mà người cười vui nhất thường chính là họ — dùng tiếng cười to nhất để che lấp tiếng tim vỡ."
+    },
   "WOC!": {
     "code": "WOC!",
-    "cn": "握草人",
-    "intro": "卧槽，我怎么是这个人格？",
-    "desc": "我们发现了一种神奇的生物——WOC!人。他们拥有两种完全独立的操作系统：一个叫“表面系统”，负责发出“我操”“牛逼”“啊？”等一系列大惊小怪的拟声词；另一个叫“后台系统”，负责冷静分析：嗯，果然不出我所料。WOC!人只会卧槽，不会多管闲事，因为他们深知，给傻逼讲道理，就像扶着烂泥上墙，不仅浪费体力，还弄自己一手屎。所以他们选择，握着一根智慧的大草，用一声饱含深情的“WOC！”来为这个疯狂的世界献上最高敬意。"
-  },
+    "cn": "Người hay cảm thán",
+    "intro": "Ối, sao tao lại là nhân cách này?",
+    "desc": "Chúng tôi phát hiện một sinh vật kỳ diệu — người WOC! Họ có hai hệ điều hành hoàn toàn độc lập: một gọi là “hệ thống bề mặt”, chịu trách nhiệm phát ra hàng loạt từ tượng thanh kinh ngạc như “Ối”, “Ngầu”, “Hả?”; hệ thống kia gọi là “hệ thống hậu trường”, chịu trách nhiệm phân tích lạnh lùng: Ừ, quả nhiên không ngoài dự đoán. Người WOC! chỉ biết “Ối” thôi, không thích xen vào chuyện người khác, vì họ hiểu rõ, giảng đạo lý với kẻ ngu ngốc giống như chống bùn lên tường, vừa phí sức lại vừa dính đầy tay phân. Vì vậy họ chọn cầm một cọng cỏ trí tuệ, dùng một tiếng “WOC!” đầy tình cảm để dành tặng sự tôn kính cao nhất cho thế giới điên cuồng này."
+    },
   "THIN-K": {
     "code": "THIN-K",
-    "cn": "思考者",
-    "intro": "已深度思考100s。",
-    "desc": "经研究发现，THIN-K人格的大脑构造与常人有根本性不同。正如名称所示，您的大脑长时间处于思考状态。您十分会审判信息，注重论点、论据、逻辑推理、潜在偏见，乃至“作者本人三代以内思想背景调查报告”的全套材料。在这个信息爆炸的时代，您绝不会轻易盲从，会在关系中衡量利弊，也十分捍卫自己的自我空间。当别人看到您独处时在发呆？愚蠢，那不是发呆，那是您的大脑正在对今天接收到的所有信息进行分类、归档和销毁。"
-  },
+    "cn": "Người suy nghĩ",
+    "intro": "Đã suy nghĩ sâu 100 giây.",
+    "desc": "Sau khi nghiên cứu phát hiện, cấu tạo não bộ của nhân cách THIN-K có sự khác biệt căn bản với người thường. Như tên gọi, não bạn ở trạng thái suy nghĩ trong thời gian dài. Bạn rất giỏi phán xét thông tin, chú trọng luận điểm, luận cứ, suy luận logic, thiên kiến tiềm ẩn, thậm chí toàn bộ tài liệu “báo cáo điều tra bối cảnh tư tưởng ba đời tác giả”. Trong thời đại thông tin bùng nổ này, bạn tuyệt đối không dễ mù quáng theo đuổi, sẽ cân nhắc lợi hại trong mối quan hệ, và rất bảo vệ không gian cá nhân của mình. Khi người khác thấy bạn ở một mình mà thất thần? Ngốc nghếch, đó không phải thất thần, đó là não bạn đang phân loại, lưu trữ và hủy bỏ tất cả thông tin nhận được hôm nay."
+    },
   "SHIT": {
     "code": "SHIT",
-    "cn": "愤世者",
-    "intro": "这个世界，构石一坨。",
-    "desc": "恭喜您，SHIT人格是宇宙中已知的唯一一种稀有人格。所谓狗屎，并不是在抱怨，而是在进行一种神秘仪式。SHIT的行为模式是一场惊天动地的悖论戏剧。嘴上：这个项目简直是屎。手上：默默打开 Excel，开始建构函数模型和甘特图。嘴上：这帮同事都是 shit。手上：在同事搞砸之后，一边烦着，一边熬夜把烂摊子收拾得明明白白。嘴上：这个世界就是一坨 shit，赶紧毁灭吧。手上：第二天早上七点准时起床，挤上 shit 一样的地铁，去干那份 shit 一样的工作。别怕，那不是世界末日的警报，那是他马上要开始拯救世界的冲锋号。"
-  },
+    "cn": "Kẻ phẫn thế",
+    "intro": "Thế giới này, một cục shit.",
+    "desc": "Chúc mừng bạn, nhân cách SHIT là nhân cách hiếm duy nhất đã biết trong vũ trụ. Cái gọi là shit không phải đang than vãn, mà đang thực hiện một nghi thức thần bí. Hành vi của SHIT là một vở kịch nghịch lý kinh thiên động địa. Miệng: Dự án này đơn giản là shit. Tay: Lặng lẽ mở Excel, bắt đầu xây dựng mô hình hàm và biểu đồ Gantt. Miệng: Đám đồng nghiệp này toàn shit. Tay: Sau khi đồng nghiệp làm hỏng, vừa bực vừa thức trắng đêm dọn dẹp đống hỗn độn cho gọn gàng. Miệng: Thế giới này đúng là một cục shit, mau diệt vong đi. Tay: Sáng hôm sau 7 giờ đúng dậy, chen lên tàu điện ngầm shit, đi làm công việc shit. Đừng sợ, đó không phải báo động tận thế, đó là tiếng kèn xung phong sắp bắt đầu cứu thế giới của hắn."
+    },
   "ZZZZ": {
     "code": "ZZZZ",
-    "cn": "装死者",
-    "intro": "我没死，我只是在睡觉。",
-    "desc": "恭喜您，您测出了全中国最稀有的装死人格。群里99+条消息您可以视而不见，但当有人发出“@全体成员 还有半小时就截止了”的最后通牒时，您也许会像刚从千年古墓里苏醒一样，缓缓地敲出一个“收到”，然后在29分钟内，交出一份虽然及格的答卷。是的，直到“死线”这个唯一的、最高权限的指令出现，您就真正爆发了，不鸣则已，一鸣惊人。您向宇宙证明了一个真理：有时什么都不做，就不会做错。"
-  },
+    "cn": "Kẻ giả chết",
+    "intro": "Tao chưa chết, tao chỉ đang ngủ.",
+    "desc": "Chúc mừng bạn, bạn đã đo được nhân cách giả chết hiếm nhất thế giới. 99+ tin nhắn trong group bạn có thể coi như không thấy, nhưng khi có người gửi “@Tất cả thành viên Còn nửa tiếng nữa là hết hạn” thì bạn có thể như vừa tỉnh dậy từ ngôi mộ ngàn năm, chậm rãi gõ ra một chữ “Đã nhận”, rồi trong 29 phút nộp một bài tuy chỉ đủ điểm nhưng vẫn xong. Đúng vậy, chỉ đến khi lệnh “deadline” – lệnh quyền hạn tối cao duy nhất xuất hiện, bạn mới thực sự bùng nổ, không kêu thì thôi, một tiếng là kinh thiên. Bạn đã chứng minh cho vũ trụ một chân lý: Đôi khi không làm gì thì sẽ không làm sai."
+    },
   "POOR": {
     "code": "POOR",
-    "cn": "贫困者",
-    "intro": "我穷，但我很专。",
-    "desc": "恭喜您，您测出了【POOR - 贫困者】。这个“贫困”不是钱包余额的判决书，更像一种欲望断舍离后的资源再分配。别人把精力撒成漫天二维码，你把精力压成一束激光，照哪儿，哪儿就开始冒烟。POOR的世界很简单：不重要的东西一律降噪，重要的东西狠狠干到底。热闹、社交、虚荣、到处刷存在感？抱歉，没空。你不是资源少，你是把资源全部灌进了一个坑里，所以看起来像贫困，实际上像矿井。一旦某件事被你认定值得钻，外界再吵也只是背景杂音。"
-  },
+    "cn": "Người nghèo",
+    "intro": "Tao nghèo, nhưng tao rất chuyên.",
+    "desc": "Chúc mừng bạn, bạn đã đo được 【POOR - Người nghèo】. “Nghèo” ở đây không phải bản án số dư ví tiền, mà giống như tái phân bổ tài nguyên sau khi cắt bỏ dục vọng. Người khác rải năng lượng thành mã QR đầy trời, bạn nén năng lượng thành một chùm laser, chiếu đâu cháy đó. Thế giới của POOR rất đơn giản: thứ không quan trọng đều giảm nhiễu, thứ quan trọng thì làm đến cùng. Náo nhiệt, xã giao, hư vinh, khắp nơi, khắp nơi thể hiện sự tồn tại? Xin lỗi, không có thời gian. Bạn không phải tài nguyên ít, mà là dồn hết tài nguyên vào một hố, nên trông như nghèo, thực ra như mỏ khoáng. Một khi việc gì được bạn xác định đáng làm, bên ngoài dù ồn ào cũng chỉ là tiếng ồn nền."
+    },
   "MONK": {
     "code": "MONK",
-    "cn": "僧人",
-    "intro": "没有那种世俗的欲望。",
-    "desc": "当别人在KTV里参悟爱与恨的纠缠，MONK人格选择在家中参悟一份大道。MONK已然看破红尘，不希望闲人来扰其清修、破其道行。MONK的个人空间，是他们的结界，是他们的须弥山，是他们的绝对领域，神圣不可侵犯。踏入者，会感受到一种来自灵魂深处的窒息感。MONK们不黏不缠，因为在他们的世界观里，万物皆有其独立轨道。行星与行星之间保持着亿万公里的距离，才构成和谐宇宙，人与人之间为什么不行？"
-  },
+    "cn": "Tăng sĩ",
+    "intro": "Không có dục vọng thế tục ấy.",
+    "desc": "Khi người khác ở KTV tham ngộ sự giằng xé giữa tình yêu và hận thù, nhân cách MONK chọn ở nhà tham ngộ một con đường lớn. MONK đã nhìn thấu hồng trần, không muốn người nhàn rỗi đến quấy rối sự tu hành thanh tịnh, phá hoại đạo hạnh của mình. Không gian cá nhân của MONK là kết giới của họ, là núi Tu Di của họ, là lĩnh vực tuyệt đối của họ, thiêng liêng bất khả xâm phạm. Người bước vào sẽ cảm nhận được cảm giác ngột ngạt từ sâu thẳm linh hồn. MONK không dính không vướng, vì trong thế giới quan của họ, vạn vật đều có quỹ đạo riêng. Hành tinh với hành tinh giữ khoảng cách hàng tỷ km mới tạo thành vũ trụ hài hòa, tại sao con người với con người lại không thể?"
+    },
   "IMSB": {
     "code": "IMSB",
-    "cn": "傻者",
-    "intro": "认真的么？我真的是傻逼么？",
-    "desc": "恭喜您！您根本不在人类范畴内！您测出了百万年一遇的【IMSB】人格。IMSB人格的大脑里住着两个不死不休的究极战士：一个叫“我他妈冲了！”，另一个叫“我是个傻逼！”。当IMSB面对一个有好感的人时，前者会说：冲啊！去要微信！去约饭！爱要大声说出来！后者接着说：人家凭什么看得上你？你去了就是自取其辱！最终结果：盯着对方背影直到消失，然后掏出手机搜索“如何克服社交恐惧症”。IMSB不是真的傻，只是您的内心戏，可能比漫威宇宙所有电影加起来都长。"
-  },
+    "cn": "Kẻ khờ khạo",
+    "intro": "Nghiêm túc hả? Tao thật sự là thằng ngu à?",
+    "desc": "Chúc mừng bạn! Bạn hoàn toàn không nằm trong phạm trù loài người! Bạn đã đo được nhân cách triệu năm mới gặp một lần — 【IMSB】. Trong não bộ của nhân cách IMSB có hai chiến binh tối thượng không chết không nghỉ: một tên “Tao đéo chịu nổi nữa, lao lên!”, tên kia “Tao là thằng ngu!”. Khi IMSB đối mặt với người có cảm tình, tên trước nói: Lao lên! Đi xin WeChat! Đi hẹn ăn! Tình yêu phải nói to ra! Tên sau tiếp lời: Người ta凭 gì nhìn trúng mày? Mày đi là tự rước nhục thôi! Kết quả cuối cùng: nhìn theo bóng lưng đối phương đến khi biến mất, rồi lấy điện thoại ra search “Làm sao vượt qua sợ xã giao”. IMSB không phải thật ngu, chỉ là kịch nội tâm của bạn có thể dài hơn toàn bộ phim Marvel cộng lại."
+    },
   "SOLO": {
     "code": "SOLO",
-    "cn": "孤儿",
-    "intro": "我哭了，我怎么会是孤儿？",
-    "desc": "恭喜您，您测出了全中国最稀有的【SOLO - 孤儿】人格。别急着哭，国王的加冕仪式，通常都是一个人。孤儿的自我价值感偏低，因此有时主动疏远他人，孤儿们在自己的灵魂外围建起了一座名为“莫挨老子”的万里长城。每一块砖，都是过去的一道伤口。孤儿就像一只把所有软肋都藏起来，然后用最硬的刺对着世界的刺猬。那满身的尖刺不是攻击，那是一句句说不出口的“别过来，我怕你也受伤”和“求求你，别离开”。"
-  },
+    "cn": "Trẻ mồ côi",
+    "intro": "Tao khóc rồi, sao tao lại là trẻ mồ côi?",
+    "desc": "Chúc mừng bạn, bạn đã đo được nhân cách hiếm nhất thế giới — 【SOLO - Trẻ mồ côi】. Đừng vội khóc, lễ đăng quang của vua thường chỉ một mình. Giá trị tự thân của trẻ mồ côi偏 thấp, nên đôi khi chủ động xa lánh người khác. Trẻ mồ côi đã xây một Vạn Lý Trường Thành mang tên “Đừng chạm vào tao” xung quanh linh hồn mình. Mỗi viên gạch đều là một vết thương trong quá khứ. Trẻ mồ côi giống như một con nhím giấu hết tất cả chỗ yếu, rồi dùng những cái gai cứng nhất chĩa về phía thế giới. Những cái gai đầy mình không phải để tấn công, mà là những câu “Đừng lại gần, tao sợ mày cũng bị thương” và “Xin mày, đừng rời đi” không thể nói ra."
+    },
   "FUCK": {
     "code": "FUCK",
-    "cn": "草者",
-    "intro": "操！这是什么人格？",
-    "desc": "恭喜您！您根本不在人类范畴内！您测出了百万年一遇的【FUCK】人格。人类文明城市里，出现了一株无法被任何除草剂杀死的、具有超级生命力的人形野草——那就是草者人格。它的学名，就叫 FUCK。在FUCK的世界观里，世俗规则简直毫无意义，并且FUCK的情绪开关是物理拨片式的：FUCK YEAH 和 FUCK OFF。FUCK追求的不只是当下快感，也在追求一种在体内横冲直撞的生命力。当所有人都被驯化成了温顺家禽，FUCK则是荒野上最后那一声狼嚎。"
-  },
+    "cn": "Người nóng tính",
+    "intro": "Địt! Đây là nhân cách gì?",
+    "desc": "Chúc mừng bạn! Bạn hoàn toàn không nằm trong phạm trù loài người! Bạn đã đo được nhân cách triệu năm mới gặp một lần — 【FUCK】. Trong nền văn minh đô thị loài người xuất hiện một loài cỏ dại hình người có sức sống siêu mạnh, không thể bị bất kỳ thuốc diệt cỏ nào tiêu diệt — đó chính là nhân cách Cỏ. Tên khoa học của nó là FUCK. Trong thế giới quan của FUCK, quy tắc thế tục hoàn toàn vô nghĩa, và công tắc cảm xúc của FUCK là kiểu nút gạt vật lý: FUCK YEAH và FUCK OFF. FUCK theo đuổi không chỉ khoái cảm hiện tại, mà còn theo đuổi một sức sống lao thẳng trong cơ thể. Khi tất cả mọi người đều bị thuần hóa thành gia cầm ngoan ngoãn, FUCK chính là tiếng hú sói cuối cùng trên hoang dã."
+    },
   "DEAD": {
     "code": "DEAD",
-    "cn": "死者",
-    "intro": "我，还活着吗？",
-    "desc": "恭喜您，您测出了全中国最为罕见的人格，只是“死者”这个名字实在有点晦气，所以也可以叫：Don't Expect Any Drives。死者已经看透了那些无意义的哲学思考，因此显得对一切“失去”了兴趣。死者们看世界的眼神，就像一位顶级玩家通关了所有主线、支线、隐藏任务，删档重开了999次之后，终于发现：这游戏压根就没意思。死者是超越了欲望和目标的终极贤者。他们的存在，就是对这个喧嚣世界最沉默也最彻底的抗议。"
-  },
+    "cn": "Người chết",
+    "intro": "Tao còn sống không?",
+    "desc": "Chúc mừng bạn, bạn đã đo được nhân cách hiếm nhất thế giới, chỉ là cái tên “người chết” nghe hơi xui xẻo, nên cũng có thể gọi là: Don't Expect Any Drives. Người chết đã nhìn thấu những suy nghĩ triết học vô nghĩa, nên dường như mất hứng thú với mọi thứ. Ánh mắt người chết nhìn thế giới giống như một game thủ đỉnh cao đã thông quan hết main quest, side quest, nhiệm vụ ẩn, xóa save chơi lại 999 lần, cuối cùng phát hiện: trò chơi này vốn chẳng có gì vui. Người chết là nhà hiền triết tối thượng vượt qua dục vọng và mục tiêu. Sự tồn tại của họ chính là lời phản kháng im lặng và triệt để nhất với thế giới ồn ào này."
+    },
   "IMFW": {
     "code": "IMFW",
-    "cn": "废物",
-    "intro": "我真的...是废物吗？",
-    "desc": "恭喜您，您测出的不是一个普通人格，您是一种极其珍稀的、仅占世界人口0.0001％的——【废物】。废物们的自尊通常有些脆弱，缺乏安全感，偶尔也会缺乏主见，因此这种人格能精确地感知到周围最强的那个 WiFi 信号——也就是他们心里最可靠的人。走进【废物】人格的生活，就像走进了一个顶级兰花温室：需要精确控制温度、湿度，以及每天定时进行“我爱你”的言语光合作用。给废物一颗糖，他们会还你一个完全信任你、亮晶晶的眼神。你未必是废物，你只是太没防备，太容易认真。"
-  },
+    "cn": "phế vật",
+    "intro": "Tôi thật sự... là phế vật sao?",
+    "desc": "Chúc mừng bạn, bạn đo được không phải nhân cách bình thường, mà là một loại cực kỳ hiếm, chỉ chiếm 0.0001% dân số thế giới — 【phế vật】. phế vật thường có tự tôn khá mong manh, thiếu cảm giác an toàn, thỉnh thoảng thiếu chủ kiến, nên nhân cách này có thể chính xác cảm nhận được tín hiệu WiFi mạnh nhất xung quanh — tức là người đáng tin cậy nhất trong lòng họ. Bước vào cuộc sống của 【phế vật】 giống như bước vào nhà kính lan cao cấp: cần kiểm soát chính xác nhiệt độ, độ ẩm, và hàng ngày phải cung cấp “Anh yêu em” bằng quang hợp lời nói. Cho phế vật một viên kẹo, họ sẽ đáp lại bằng ánh mắt long lanh hoàn toàn tin tưởng bạn. Bạn chưa chắc là phế vật, bạn chỉ là quá không phòng bị, quá dễ nghiêm túc."
+    },
   "HHHH": {
     "code": "HHHH",
-    "cn": "傻乐者",
-    "intro": "哈哈哈哈哈哈。",
-    "desc": "恭喜您！由于您的思维回路过于清奇，标准人格库已全面崩溃。第一人格匹配率只有60％以下时，系统才会为您强制匹配这个人格——【HHHH - 傻乐者】。这个人格有什么特质？哈哈哈哈哈哈哈哈哈哈哈哈！对不起，这就是全部的特质了。您可以查看十五维度进行不专业的评估，实在是抱歉！作者设置人格时没有考虑全面，因此才会出现这样的状况。哈哈哈哈哈哈……笑着笑着，我便哭了出来。怎么会有人的脑回路这么新奇。"
+    "cn": "Người ngốc vui",
+    "intro": "KKKK KKKK",
+    "desc": "Chúc mừng bạn! Vì mạch suy nghĩ của bạn quá kỳ quặc, thư viện nhân cách chuẩn đã hoàn toàn sụp đổ. Khi mức khớp nhân cách đầu tiên chỉ dưới 60%, hệ thống sẽ buộc khớp cho bạn nhân cách này — 【HHHH - Người ngốc vui】. Nhân cách này có đặc điểm gì? Ha ha ha ha ha ha ha ha ha ha ha! Xin lỗi, đó là toàn bộ đặc điểm. Bạn có thể xem 15 chiều để đánh giá không chuyên nghiệp, thật sự xin lỗi! Tác giả khi thiết lập nhân cách chưa cân nhắc toàn diện, nên mới xuất hiện tình huống này. Ha ha ha ha ha…… Cười cười rồi tôi lại khóc. Sao lại có người có mạch não kỳ quặc đến vậy."
   },
   "DRUNK": {
     "code": "DRUNK",
-    "cn": "酒鬼",
-    "intro": "烈酒烧喉，不得不醉。",
-    "desc": "您为什么走路摇摇晃晃？您为什么总是情绪高涨？您为什么看东西是重影的？因为您体内流淌的不是血液，是美味的五粮液！是国窖1573！是江小白！是陕西五粮液！哦，美味的白酒，每一滴都在燃烧，都在沸腾。您是否已经习惯了将白酒灌入保温杯，当作白开水一饮而下？多么伟大的白酒！它让您在饭桌上谈笑风生，在厕所里抱着马桶忏悔人生；它让您觉得自己是夜场诗人，是宇宙中心那团不灭的火，直到第二天上午十点，您的头像裂开的核桃，嘴角挂着食物残渣，灵魂缩在角落里。您终于明白，昨晚那个高谈阔论、拍桌怒吼的人，已经成为了一个酒鬼。"
-  }
+    "cn": "Sâu rượu",
+    "intro": "Rượu mạnh cháy họng, không thể không say.",
+    "desc": "Bạn tại sao đi loạng choạng? Bạn tại sao cảm xúc luôn hưng phấn? Bạn tại sao nhìn mọi thứ bị đôi? Vì trong cơ thể bạn chảy không phải máu, mà là rượu trắng ngon tuyệt. Ồ, rượu trắng thơm ngon, từng giọt đều đang cháy, đều đang sôi. Bạn đã quen đổ rượu trắng vào cốc giữ nhiệt, uống như nước lọc chưa? Thật vĩ đại thay rượu trắng! Nó khiến bạn ở bàn tiệc cười nói vui vẻ, ở toilet ôm bồn cầu sám hối cuộc đời; nó khiến bạn cảm thấy mình là nhà thơ đêm khuya, là ngọn lửa bất diệt ở trung tâm vũ trụ, đến 10 giờ sáng hôm sau, đầu bạn nứt như quả óc chó, khóe miệng dính vụn thức ăn, linh hồn co ro trong góc tối. Bạn cuối cùng cũng hiểu, người đêm qua cao đàm khoát luận, đập bàn gầm thét, đã trở thành một gã nghiện rượu."
+    }
 };
     const TYPE_IMAGES = {
   "IMSB": "./image/IMSB.png",
@@ -1394,80 +1390,80 @@
 ];
     const DIM_EXPLANATIONS = {
   "S1": {
-    "L": "对自己下手比别人还狠，夸你两句你都想先验明真伪。",
-    "M": "自信值随天气波动，顺风能飞，逆风先缩。",
-    "H": "心里对自己大致有数，不太会被路人一句话打散。"
+    "L": "Tự hại bản thân còn ác hơn hại người khác, khen bạn hai câu cũng muốn kiểm chứng trước xem có thật không.",
+    "M": "Tự tin dao động theo thời tiết, thuận gió thì bay, ngược gió thì co lại trước.",
+    "H": "Trong lòng đại khái biết rõ bản thân, không dễ bị người lạ một câu làm tan vỡ."
   },
   "S2": {
-    "L": "内心频道雪花较多，常在“我是谁”里循环缓存。",
-    "M": "平时还能认出自己，偶尔也会被情绪临时换号。",
-    "H": "对自己的脾气、欲望和底线都算门儿清。"
+    "L": "Kênh nội tâm nhiều nhiễu tuyết, thường lặp lại \"Tôi là ai\" trong bộ nhớ cache.",
+    "M": "Thường ngày còn nhận ra mình, thỉnh thoảng bị cảm xúc đổi số tạm thời.",
+    "H": "Với tính khí, dục vọng và giới hạn của mình đều khá rõ ràng."
   },
   "S3": {
-    "L": "更在意舒服和安全，没必要天天给人生开冲刺模式。",
-    "M": "想上进，也想躺会儿，价值排序经常内部开会。",
-    "H": "很容易被目标、成长或某种重要信念推着往前。"
+    "L": "Quan tâm thoải mái và an toàn hơn, không cần mỗi ngày mở chế độ tăng tốc cho cuộc đời.",
+    "M": "Muốn tiến bộ, cũng muốn nằm một lúc, thứ tự giá trị thường họp nội bộ.",
+    "H": "Dễ bị mục tiêu, trưởng thành hoặc niềm tin quan trọng nào đó đẩy về phía trước."
   },
   "E1": {
-    "L": "感情里警报器灵敏，已读不回都能脑补到大结局。",
-    "M": "一半信任，一半试探，感情里常在心里拉锯。",
-    "H": "更愿意相信关系本身，不会被一点风吹草动吓散。"
+    "L": "Trong tình cảm báo động rất nhạy, đã đọc không trả lời cũng tưởng tượng đến kết cục lớn.",
+    "M": "Nửa tin nửa ngờ, trong tình cảm thường giằng co trong lòng.",
+    "H": "Muốn tin vào mối quan hệ hơn, không bị chút gió thoảng cỏ lay làm tan."
   },
   "E2": {
-    "L": "感情投入偏克制，心门不是没开，是门禁太严。",
-    "M": "会投入，但会给自己留后手，不至于全盘梭哈。",
-    "H": "一旦认定就容易认真，情绪和精力都给得很足。"
+    "L": "Đầu tư tình cảm khá kiềm chế, cửa lòng không phải không mở mà kiểm soát quá nghiêm.",
+    "M": "Sẽ đầu tư, nhưng giữ đường lui, không all-in hết.",
+    "H": "Một khi xác định thì dễ nghiêm túc, cảm xúc và năng lượng đều cho rất đầy đủ."
   },
   "E3": {
-    "L": "容易黏人也容易被黏，关系里的温度感很重要。",
-    "M": "亲密和独立都要一点，属于可调节型依赖。",
-    "H": "空间感很重要，再爱也得留一块属于自己的地。"
+    "L": "Dễ dính người cũng dễ bị dính, cảm giác ấm áp trong quan hệ rất quan trọng.",
+    "M": "Cần cả thân mật lẫn độc lập, thuộc kiểu phụ thuộc có thể điều chỉnh.",
+    "H": "Cảm giác không gian rất quan trọng, dù yêu cũng phải giữ khoảng riêng cho mình."
   },
   "A1": {
-    "L": "看世界自带防御滤镜，先怀疑，再靠近。",
-    "M": "既不天真也不彻底阴谋论，观望是你的本能。",
-    "H": "更愿意相信人性和善意，遇事不急着把世界判死刑。"
+    "L": "Nhìn thế giới tự mang kính lọc phòng thủ, nghi ngờ trước rồi mới tiếp cận.",
+    "M": "Không ngây thơ cũng không âm mưu luận triệt để, quan sát là bản năng.",
+    "H": "Muốn tin nhân tính và thiện ý hơn, gặp việc không vội kết án thế giới."
   },
   "A2": {
-    "L": "规则能绕就绕，舒服和自由往往排在前面。",
-    "M": "该守的时候守，该变通的时候也不死磕。",
-    "H": "秩序感较强，能按流程来就不爱即兴炸场。"
+    "L": "Quy tắc có thể lách thì lách, thoải mái và tự do thường ưu tiên.",
+    "M": "Nên giữ thì giữ, nên linh hoạt thì không chết cứng.",
+    "H": "Cảm giác trật tự khá mạnh, có quy trình thì không thích phá đám tức thì."
   },
   "A3": {
-    "L": "意义感偏低，容易觉得很多事都像在走过场。",
-    "M": "偶尔有目标，偶尔也想摆烂，人生观处于半开机。",
-    "H": "做事更有方向，知道自己大概要往哪边走。"
+    "L": "Cảm giác ý nghĩa thấp, dễ thấy nhiều việc chỉ là đi qua loa.",
+    "M": "Thỉnh thoảng có mục tiêu, thỉnh thoảng muốn nằm, quan niệm sống nửa mở nửa tắt.",
+    "H": "Làm việc có hướng rõ hơn, biết mình đại khái muốn đi về đâu."
   },
   "Ac1": {
-    "L": "做事先考虑别翻车，避险系统比野心更先启动。",
-    "M": "有时想赢，有时只想别麻烦，动机比较混合。",
-    "H": "更容易被成果、成长和推进感点燃。"
+    "L": "Làm việc trước tiên nghĩ đừng lật xe, hệ thống tránh rủi ro khởi động trước tham vọng.",
+    "M": "Lúc muốn thắng, lúc chỉ muốn đừng phiền, động cơ hỗn hợp.",
+    "H": "Dễ bị kết quả, trưởng thành và cảm giác tiến triển khơi dậy."
   },
   "Ac2": {
-    "L": "做决定前容易多转几圈，脑内会议常常超时。",
-    "M": "会想，但不至于想死机，属于正常犹豫。",
-    "H": "拍板速度快，决定一下就不爱回头磨叽。"
+    "L": "Quyết định trước dễ xoay nhiều vòng, hội nghị não thường quá giờ.",
+    "M": "Sẽ nghĩ, nhưng không nghĩ đến chết máy, do dự bình thường.",
+    "H": "Quyết đoán nhanh, quyết định xong không thích quay lại do dự."
   },
   "Ac3": {
-    "L": "执行力和死线有深厚感情，越晚越像要觉醒。",
-    "M": "能做，但状态看时机，偶尔稳偶尔摆。",
-    "H": "推进欲比较强，事情不落地心里都像卡了根刺。"
+    "L": "Thực thi lực và deadline có tình cảm sâu, càng muộn càng như sắp thức tỉnh.",
+    "M": "Làm được nhưng trạng thái tùy thời, lúc ổn lúc nằm.",
+    "H": "Dục vọng thúc đẩy khá mạnh, việc không xong lòng như mắc gai."
   },
   "So1": {
-    "L": "社交启动慢热，主动出击这事通常得攒半天气。",
-    "M": "有人来就接，没人来也不硬凑，社交弹性一般。",
-    "H": "更愿意主动打开场子，在人群里不太怕露头。"
+    "L": "Xã giao khởi động chậm, chủ động tấn công thường phải tích khí nửa ngày.",
+    "M": "Có người đến thì tiếp, không có cũng không ép, đàn hồi xã giao trung bình.",
+    "H": "Muốn chủ động mở sân hơn, trong đám đông không sợ nổi bật."
   },
   "So2": {
-    "L": "关系里更想亲近和融合，熟了就容易把人划进内圈。",
-    "M": "既想亲近又想留缝，边界感看对象调节。",
-    "H": "边界感偏强，靠太近会先本能性后退半步。"
+    "L": "Trong quan hệ muốn thân cận và hòa nhập, quen rồi dễ kéo người vào vòng trong.",
+    "M": "Vừa muốn gần vừa muốn giữ khoảng, cảm giác biên giới tùy người điều chỉnh.",
+    "H": "Cảm giác biên giới khá mạnh, lại gần quá sẽ bản năng lùi nửa bước."
   },
   "So3": {
-    "L": "表达更直接，心里有啥基本不爱绕。",
-    "M": "会看气氛说话，真实和体面通常各留一点。",
-    "H": "对不同场景的自我切换更熟练，真实感会分层发放。"
-  }
+    "L": "Bày tỏ trực tiếp hơn, trong lòng có gì cơ bản không thích vòng vo.",
+    "M": "Sẽ xem không khí nói, chân thực và lịch sự thường giữ mỗi bên một chút.",
+    "H": "Chuyển đổi bản thân trước các tình huống khác nhau thành thạo hơn, cảm giác chân thực sẽ phân tầng phát ra."
+    }
 };
     const dimensionOrder = ['S1','S2','S3','E1','E2','E3','A1','A2','A3','Ac1','Ac2','Ac3','So1','So2','So3'];
 
@@ -1517,9 +1513,9 @@
     }
 
     function getQuestionMetaLabel(q) {
-      if (q.special) return '补充题';
-      return app.previewMode ? dimensionMeta[q.dim].name : '维度已隐藏';
-    }
+      if (q.special) return 'Câu hỏi bổ sung';
+      return app.previewMode ? dimensionMeta[q.dim].name : 'Chiều đã ẩn';
+        }
 
     function renderQuestions() {
       const visibleQuestions = getVisibleQuestions();
@@ -1529,7 +1525,7 @@
         card.className = 'question';
         card.innerHTML = `
           <div class="question-meta">
-            <div class="badge">第 ${index + 1} 题</div>
+            <div class="badge">Câu ${index + 1} </div>
             <div>${getQuestionMetaLabel(q)}</div>
           </div>
           <div class="question-title">${q.text}</div>
@@ -1580,9 +1576,9 @@
       const complete = done === total && total > 0;
       submitBtn.disabled = !complete;
       testHint.textContent = complete
-        ? '都做完了。现在可以把你的电子魂魄交给结果页审判。'
-        : '全选完才会放行。世界已经够乱了，起码把题做完整。';
-    }
+      ? 'Đã làm xong hết. Bây giờ có thể giao linh hồn điện tử của bạn cho trang kết quả xét xử.'
+        : 'Chỉ khi chọn hết tất cả mới cho qua. Thế giới đã đủ rối loạn rồi, ít nhất cũng làm xong bài.';
+          }
 
     function sumToLevel(score) {
       if (score <= 3) return 'L';
@@ -1637,24 +1633,24 @@
       const drunkTriggered = getDrunkTriggered();
 
       let finalType;
-      let modeKicker = '你的主类型';
-      let badge = `匹配度 ${bestNormal.similarity}% · 精准命中 ${bestNormal.exact}/15 维`;
-      let sub = '维度命中度较高，当前结果可视为你的第一人格画像。';
+      let modeKicker = 'Loại chính của bạn';
+      let badge = `Mức độ khớp ${bestNormal.similarity}% · Chính xác trúng ${bestNormal.exact}/15 chiều`;
+      let sub = 'Độ khớp chiều cao, kết quả hiện tại có thể xem là chân dung nhân cách đầu tiên của bạn.';
       let special = false;
       let secondaryType = null;
 
       if (drunkTriggered) {
         finalType = TYPE_LIBRARY.DRUNK;
         secondaryType = bestNormal;
-        modeKicker = '隐藏人格已激活';
-        badge = '匹配度 100% · 酒精异常因子已接管';
-        sub = '乙醇亲和性过强，系统已直接跳过常规人格审判。';
+        modeKicker = 'Nhân cách ẩn đã kích hoạt';
+        badge = 'Mức độ khớp 100% · Yếu tố bất thường rượu đã tiếp quản';
+        sub = 'Tính thân rượu quá mạnh, hệ thống đã trực tiếp bỏ qua xét xử nhân cách thông thường.';
         special = true;
       } else if (bestNormal.similarity < 60) {
         finalType = TYPE_LIBRARY.HHHH;
-        modeKicker = '系统强制兜底';
-        badge = `标准人格库最高匹配仅 ${bestNormal.similarity}%`;
-        sub = '标准人格库对你的脑回路集体罢工了，于是系统把你强制分配给了 HHHH。';
+        modeKicker = 'Hệ thống buộc phân bổ mặc định';
+        badge = `Thư viện nhân cách chuẩn khớp cao nhất chỉ ${bestNormal.similarity}%`;
+        sub = 'Thư viện nhân cách chuẩn đã đình công tập thể với mạch não của bạn, nên hệ thống buộc phân bổ bạn cho KKKK.';
         special = true;
       } else {
         finalType = bestNormal;
@@ -1702,8 +1698,8 @@
       document.getElementById('resultDesc').textContent = type.desc;
       document.getElementById('posterCaption').textContent = type.intro;
       document.getElementById('funNote').textContent = result.special
-        ? '本测试仅供娱乐。隐藏人格和傻乐兜底都属于作者故意埋的损招，请勿把它当成医学、心理学、相学、命理学或灵异学依据。'
-        : '本测试仅供娱乐，别拿它当诊断、面试、相亲、分手、招魂、算命或人生判决书。你可以笑，但别太当真。';
+      ? 'Bài kiểm tra này chỉ để giải trí. Nhân cách ẩn và "ngốc vui" đều là chiêu hại cố ý của tác giả, xin đừng coi nó là cơ sở y học, tâm lý học, tướng số, mệnh lý hay tâm linh.'
+        : 'Bài kiểm tra này chỉ để giải trí, đừng dùng nó làm chẩn đoán, phỏng vấn, mai mối, chia tay, gọi hồn, bói toán hay phán quyết cuộc đời. Cười thì cười, nhưng đừng quá nghiêm túc.';
 
       const posterBox = document.getElementById('posterBox');
       const posterImage = document.getElementById('posterImage');
